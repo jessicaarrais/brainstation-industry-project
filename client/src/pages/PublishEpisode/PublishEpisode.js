@@ -56,7 +56,7 @@ export default function PublishEpisode() {
           ></input>
 
           <button className="primaryButton">
-            Next<span className="primaryButtonText"></span>
+            <span className="primaryButtonText">Next</span>
           </button>
         </form>
       </div>

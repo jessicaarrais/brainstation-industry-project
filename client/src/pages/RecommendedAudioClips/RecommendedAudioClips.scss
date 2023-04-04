@@ -28,18 +28,13 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #000000;
   border: none;
+  cursor: pointer;
 }
 
 .primaryButtonText {
-  position: absolute;
-  width: 33px;
-  height: 11px;
-  left: 180px;
-  top: 739px;
-  display: flex;
-  align-items: center;
+  font-family: "sans-serif", "Helvetica Nue", "Helvetica", "Arial", "Ubuntu";
+  color: #000000;
   letter-spacing: -0.075em;
 }
 
@@ -99,11 +94,12 @@ body {
   top: 208px;
   border: 1px solid #878787;
   border-radius: 4px;
+  padding: 13px 13px 32px 11px;
 }
 
 .inputField::placeholder {
   position: absolute;
-  padding: 13px 219px 32px 11px;
+  padding: 0;
 }
 
 #episodeTitle {
@@ -113,6 +109,13 @@ body {
   width: 294px;
   height: 121px;
   top: 330px;
+  resize: none;
+  padding: 13px;
+  font-family: "sans-serif", "Helvetica Nue", "Helvetica", "Arial", "Ubuntu";
+}
+
+#episodeDescription::placeholder {
+  font-family: "sans-serif", "Helvetica Nue", "Helvetica", "Arial", "Ubuntu";
 }
 
 #seasonNumber {
@@ -124,6 +127,7 @@ body {
   top: 545px;
   border: 1px solid #878787;
   border-radius: 4px;
+  padding: 7px;
 }
 
 #episodeNumber {
@@ -135,9 +139,46 @@ body {
   top: 592px;
   border: 1px solid #878787;
   border-radius: 4px;
+  padding: 7px;
+}
+
+.background {
+  width: 393px;
+  height: 852px;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   display: none;
+}
+
+.title {
+  font-size: 18px;
+  position: absolute;
+  width: 294px;
+  left: 50px;
+  font-weight: 700;
+  top: 195px;
+}
+
+.description {
+  font-size: 14px;
+  position: absolute;
+  top: 298px;
+  font-weight: 300;
+  left: 50px;
+}
+
+.seasonNumber {
+  font-size: 14px;
+  position: absolute;
+  left: 257px;
+  top: 410px;
+}
+
+.episodeNumber {
+  font-size: 14px;
+  position: absolute;
+  left: 257px;
+  top: 458px;
 }
