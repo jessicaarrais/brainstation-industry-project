@@ -35,13 +35,13 @@ export default function PublishEpisode() {
             className="inputField"
             placeholder="Enter title"
           />
-          <input
+          <textarea
             name="description"
             id="episodeDescription"
             type="text"
             className="inputField"
             placeholder="Enter description"
-          />
+          ></textarea>
           <input
             name="seasonNumber"
             id="seasonNumber"
@@ -53,7 +53,8 @@ export default function PublishEpisode() {
             id="episodeNumber"
             type="number"
             className="inputFeild"
-          />
+          ></input>
+
           <button className="primaryButton">
             Next<span className="primaryButtonText"></span>
           </button>
