@@ -35,7 +35,7 @@ body {
 .primaryButtonText {
   font-family: "sans-serif", "Helvetica Nue", "Helvetica", "Arial", "Ubuntu";
   color: #000000;
-  letter-spacing: -0.075em;
+  letter-spacing: 0.02em;
 }
 
 #publishThisEpisode {
@@ -156,7 +156,7 @@ input::-webkit-inner-spin-button {
   font-size: 18px;
   position: absolute;
   width: 294px;
-  left: 50px;
+  left: 48px;
   font-weight: 700;
   top: 195px;
 }
@@ -164,9 +164,10 @@ input::-webkit-inner-spin-button {
 .description {
   font-size: 14px;
   position: absolute;
+  width: 294px;
   top: 298px;
   font-weight: 300;
-  left: 50px;
+  left: 48px;
 }
 
 .seasonNumber {
@@ -181,4 +182,10 @@ input::-webkit-inner-spin-button {
   position: absolute;
   left: 257px;
   top: 458px;
+}
+
+.audio-clip {
+  position: absolute;
+  bottom: 175px;
+  right: 18px;
 }

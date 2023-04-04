@@ -2,6 +2,17 @@ body {
   background: #000000;
 }
 
+.inactive {
+  position: relative;
+  top: 100vh;
+  // display: none;
+}
+
+.active {
+  position: relative;
+  top: 0vh;
+}
+
 .container {
   position: relative;
   width: 393px;
@@ -188,4 +199,41 @@ input::-webkit-inner-spin-button {
   position: absolute;
   bottom: 175px;
   right: 18px;
+}
+
+.primaryButton--top {
+  top: 340px;
+}
+
+.fade-out {
+  top: -100vh;
+  animation: fadeout 0.1ms ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeout {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -100vh;
+  }
+}
+
+.fade-in {
+  top: 0vh;
+  animation: fadein 0.5s ease-out;
+  animation-fill-mode: forwards;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes fadein {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: 0vh;
+  }
 }

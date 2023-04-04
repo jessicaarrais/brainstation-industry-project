@@ -4,18 +4,20 @@ import RecommendedAudioClips from "./pages/RecommendedAudioClips/RecommendedAudi
 import PublishEpisode from "./pages/PublishEpisode/PublishEpisode";
 import "./App.scss";
 import ConfirmationPage from "./pages/ConfirmationPage/ConfirmationPage";
+import EpisodePage from "./pages/EpisodePage/EpisodePage";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/publish-episode/" element={<PublishEpisode />} />
+        {/* <Route path="/episode-page" element={<EpisodePage />} /> */}
+        <Route path="/episode-page/publish/" element={<PublishEpisode />} />
         {/* <Route
-          path="/publish-episode/:title/:description/:seasonNumber/:episodeNumber"
+          path="/episode-page/publish/:title/:description/:seasonNumber/:episodeNumber"
           element={<TrailerLengthSelection />}
         /> */}
         <Route
-          path="/publish-episode/:title/:description/:seasonNumber/:episodeNumber"
+          path="/episode-page/publish/:title/:description/:seasonNumber/:episodeNumber"
           element={<ConfirmationPage />}
         />
         {/* <Route
