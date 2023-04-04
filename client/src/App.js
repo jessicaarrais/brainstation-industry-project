@@ -1,10 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import TrailerLengthSelection from "./pages/TrailerLengthSelection/TrailerLengthSelection";
-import RecommendedAudioClips from "./pages/RecommendedAudioClips/RecommendedAudioClips";
 import PublishEpisode from "./pages/PublishEpisode/PublishEpisode";
-import "./App.scss";
 import ConfirmationPage from "./pages/ConfirmationPage/ConfirmationPage";
-import EpisodePage from "./pages/EpisodePage/EpisodePage";
+import "./App.scss";
 
 function App() {
   return (
