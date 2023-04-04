@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TrailerLengthSelection from "./pages/TrailerLengthSelection/TrailerLengthSelection";
 import "./App.scss";
-import RecommendedAudioClips from "./pages/RecommendedAudioClips/RecommendedAudioClips";
+import RegeneratePage from "./pages/RegeneratePage/RegeneratePage";
 import GeneratePage from "./pages/GeneratePage/GeneratePage";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         />
         <Route
           path="/create/recommended_clips"
-          element={<RecommendedAudioClips />}
+          element={<RegeneratePage />}
         />
 
         <Route
