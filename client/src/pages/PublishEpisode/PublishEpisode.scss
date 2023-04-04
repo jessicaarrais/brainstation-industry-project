@@ -1,0 +1,151 @@
+body {
+  background: #000000;
+}
+
+.container {
+  position: relative;
+  width: 393px;
+  background: #ffffff;
+  height: 852px;
+  margin: 0 auto;
+}
+
+/* Buttons */
+
+.primaryButton {
+  position: absolute;
+  width: 294px;
+  height: 47px;
+  left: 50px;
+  top: 721px;
+  background: #9791fe;
+  border-radius: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "SF Compact";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  border: none;
+}
+
+.primaryButtonText {
+  position: absolute;
+  width: 33px;
+  height: 11px;
+  left: 180px;
+  top: 739px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.075em;
+}
+
+#publishThisEpisode {
+  width: 345px;
+  height: 45px;
+  left: 24px;
+  top: 341px;
+}
+
+#publish {
+  left: 50px;
+  top: 651px;
+}
+
+.play {
+  position: absolute;
+  width: 40px;
+  height: 39px;
+}
+
+#play1 {
+  left: 35px;
+  top: 374px;
+}
+
+#play2 {
+  left: 35px;
+  top: 463px;
+}
+
+.radioButton {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #878787;
+  border-radius: 50%;
+  background-color: #ffffff;
+  left: 50px;
+  top: 156px;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+#thirtySecs {
+}
+
+/* Title Input */
+
+.inputField {
+  box-sizing: border-box;
+  position: absolute;
+  width: 294px;
+  height: 61px;
+  left: 50px;
+  top: 208px;
+  border: 1px solid #878787;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.inputField::placeholder {
+  position: absolute;
+  padding: 13px 219px 32px 11px;
+}
+
+#episodeTitle {
+}
+
+#episodeDescription {
+  width: 294px;
+  height: 121px;
+  top: 330px;
+}
+
+#seasonNumber {
+  box-sizing: border-box;
+  position: absolute;
+  width: 67px;
+  height: 33px;
+  left: 277px;
+  top: 545px;
+  border: 1px solid #878787;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+#episodeNumber {
+  box-sizing: border-box;
+  position: absolute;
+  width: 67px;
+  height: 33px;
+  left: 277px;
+  top: 592px;
+  border: 1px solid #878787;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.background {
+  width: 393px;
+  height: 852px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}

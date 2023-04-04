@@ -1,18 +1,20 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TrailerLengthSelection from "./pages/TrailerLengthSelection/TrailerLengthSelection";
-import "./App.scss";
 import RecommendedAudioClips from "./pages/RecommendedAudioClips/RecommendedAudioClips";
+import PublishEpisode from "./pages/PublishEpisode/PublishEpisode";
+import "./App.scss";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/publish-episode/" element={<PublishEpisode />} />
         <Route
-          path="/create/trailer_length"
+          path="/publish-episode/:title/:description/:seasonNumber/:episodeNumber"
           element={<TrailerLengthSelection />}
         />
         <Route
-          path="/create/recommended_clips"
+          path="/publish-episode/recommended_clips"
           element={<RecommendedAudioClips />}
         />
       </Routes>
